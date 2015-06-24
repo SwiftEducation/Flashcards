@@ -10,6 +10,14 @@ import Foundation
 class Deck {
     
     private let cards: [Flashcard]
+
+    var randomCard: Flashcard? {
+        if cards.isEmpty {
+            return nil
+        } else {
+            return cards[Int(arc4random_uniform(UInt32(cards.count)))]
+        }
+    }
     
     init() {
         let cardData = [

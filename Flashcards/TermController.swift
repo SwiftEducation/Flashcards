@@ -7,14 +7,16 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 import UIKit
 
-class ViewController: UIViewController {
+class TermController: UIViewController {
 
     @IBOutlet weak var termLabel: UILabel!
+    let deck = Deck()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let flashcard = Flashcard()
-        termLabel.text = flashcard.term
+        if let flashcard = deck.randomCard {
+            termLabel.text = flashcard.term
+        }
     }
 
     override func didReceiveMemoryWarning() {
