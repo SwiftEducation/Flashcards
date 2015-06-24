@@ -13,6 +13,7 @@
 		2AF16BD81B0E6C1C00A4759B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AF16BD71B0E6C1C00A4759B /* Images.xcassets */; };
 		2AF16BDB1B0E6C1C00A4759B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2AF16BD91B0E6C1C00A4759B /* LaunchScreen.xib */; };
 		2AF16BE71B0E6C1C00A4759B /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF16BE61B0E6C1C00A4759B /* FlashcardsTests.swift */; };
+		F902517B1B3A0DE20092DD44 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902517A1B3A0DE20092DD44 /* Deck.swift */; };
 		F96F18811B11FEC600832E90 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96F18801B11FEC600832E90 /* Flashcard.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		2AF16BE01B0E6C1C00A4759B /* FlashcardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AF16BE51B0E6C1C00A4759B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AF16BE61B0E6C1C00A4759B /* FlashcardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsTests.swift; sourceTree = "<group>"; };
+		F902517A1B3A0DE20092DD44 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		F96F18801B11FEC600832E90 /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +84,7 @@
 				2AF16BD01B0E6C1C00A4759B /* AppDelegate.swift */,
 				2AF16BD21B0E6C1C00A4759B /* ViewController.swift */,
 				F96F18801B11FEC600832E90 /* Flashcard.swift */,
+				F902517A1B3A0DE20092DD44 /* Deck.swift */,
 				2AF16BD41B0E6C1C00A4759B /* Main.storyboard */,
 				2AF16BD71B0E6C1C00A4759B /* Images.xcassets */,
 				2AF16BD91B0E6C1C00A4759B /* LaunchScreen.xib */,
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F902517B1B3A0DE20092DD44 /* Deck.swift in Sources */,
 				F96F18811B11FEC600832E90 /* Flashcard.swift in Sources */,
 				2AF16BD31B0E6C1C00A4759B /* ViewController.swift in Sources */,
 				2AF16BD11B0E6C1C00A4759B /* AppDelegate.swift in Sources */,
