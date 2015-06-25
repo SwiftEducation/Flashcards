@@ -11,14 +11,22 @@ class TermController: UIViewController {
 
     @IBOutlet weak var termLabel: UILabel!
     let deck = Deck()
+    var flashcard: Flashcard?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let flashcard = deck.randomCard {
+            self.flashcard = flashcard
             termLabel.text = flashcard.term
         }
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let definitionController = segue.destinationViewController as? DefinitionController {
+            definitionController.flashcard = flashcard
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
