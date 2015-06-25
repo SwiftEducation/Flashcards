@@ -15,12 +15,16 @@ class TermController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         if let flashcard = deck.randomCard {
             self.flashcard = flashcard
             termLabel.text = flashcard.term
         }
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let definitionController = segue.destinationViewController as? DefinitionController {
             definitionController.flashcard = flashcard
