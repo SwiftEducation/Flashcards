@@ -36,7 +36,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flashcard Term" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbt-WV-gcd">
                                 <rect key="frame" x="241" y="180" width="118" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -89,7 +89,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="pqh-Dv-3Dd" secondAttribute="trailing" constant="-16" id="tNT-Nf-tzo"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Definition" id="vZb-pH-x1c"/>
+                    <navigationItem key="navigationItem" title="Definition" id="vZb-pH-x1c">
+                        <barButtonItem key="rightBarButtonItem" title="Search" id="24O-oq-JZI">
+                            <connections>
+                                <segue destination="GvS-Zk-sMF" kind="show" id="hqO-aL-bS3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="definition" destination="pqh-Dv-3Dd" id="AZe-eo-1OY"/>
                     </connections>
@@ -97,6 +103,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttI-rz-Wti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1230" y="-130"/>
+        </scene>
+        <!--Search Controller-->
+        <scene sceneID="Y4f-1b-IF0">
+            <objects>
+                <viewController id="GvS-Zk-sMF" userLabel="Search Controller" customClass="SearchController" customModule="Flashcards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ar1-TG-F0b"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZML-Pu-rV6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zfI-XA-ybH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1g-Cm-HOs">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZML-Pu-rV6" firstAttribute="top" secondItem="x1g-Cm-HOs" secondAttribute="bottom" id="esm-GE-lVb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x1g-Cm-HOs" secondAttribute="trailing" constant="-16" id="jbF-Xw-xTG"/>
+                            <constraint firstItem="x1g-Cm-HOs" firstAttribute="leading" secondItem="zfI-XA-ybH" secondAttribute="leadingMargin" constant="-16" id="mOy-ih-2Jc"/>
+                            <constraint firstItem="x1g-Cm-HOs" firstAttribute="top" secondItem="ar1-TG-F0b" secondAttribute="bottom" id="vtN-MP-hrL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="ADT-hm-oKK"/>
+                    <connections>
+                        <outlet property="webView" destination="x1g-Cm-HOs" id="AqO-rb-Uwp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XXq-EH-C56" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="-130"/>
         </scene>
     </scenes>
 </document>

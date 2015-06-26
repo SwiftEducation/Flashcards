@@ -16,6 +16,7 @@
 		F902517B1B3A0DE20092DD44 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902517A1B3A0DE20092DD44 /* Deck.swift */; };
 		F9628B801B3C685E00900D1E /* DefinitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9628B7F1B3C685E00900D1E /* DefinitionController.swift */; };
 		F96F18811B11FEC600832E90 /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96F18801B11FEC600832E90 /* Flashcard.swift */; };
+		F971F6351B3CAA2300E7B5B4 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F971F6341B3CAA2300E7B5B4 /* SearchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F902517A1B3A0DE20092DD44 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		F9628B7F1B3C685E00900D1E /* DefinitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefinitionController.swift; sourceTree = "<group>"; };
 		F96F18801B11FEC600832E90 /* Flashcard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		F971F6341B3CAA2300E7B5B4 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				F96F18801B11FEC600832E90 /* Flashcard.swift */,
 				F902517A1B3A0DE20092DD44 /* Deck.swift */,
 				2AF16BD41B0E6C1C00A4759B /* Main.storyboard */,
+				F971F6341B3CAA2300E7B5B4 /* SearchController.swift */,
 				F9628B7F1B3C685E00900D1E /* DefinitionController.swift */,
 				2AF16BD71B0E6C1C00A4759B /* Images.xcassets */,
 				2AF16BD91B0E6C1C00A4759B /* LaunchScreen.xib */,
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F902517B1B3A0DE20092DD44 /* Deck.swift in Sources */,
+				F971F6351B3CAA2300E7B5B4 /* SearchController.swift in Sources */,
 				F96F18811B11FEC600832E90 /* Flashcard.swift in Sources */,
 				F9628B801B3C685E00900D1E /* DefinitionController.swift in Sources */,
 				2AF16BD31B0E6C1C00A4759B /* TermController.swift in Sources */,

@@ -19,4 +19,10 @@ class DefinitionController: UIViewController {
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let searchController = segue.destinationViewController as? SearchController {
+            searchController.flashcard = flashcard
+        }
+    }
+    
 }
