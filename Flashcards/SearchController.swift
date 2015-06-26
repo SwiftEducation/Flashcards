@@ -11,18 +11,20 @@ class SearchController: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
     var flashcard: Flashcard?
-
+    let baseSearchURL = "http://google.com/search?q=apple developer"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let card = flashcard {
-            let urlString = "http://google.com/search?q=apple developer \(card.term)"
-            if let escapedURLString = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding) {
-                if let url = NSURL(string: escapedURLString) {
-                    let request = NSURLRequest(URL: url)
-                    webView.loadRequest(request)
-                }
-            }
+        if let card = flashcard,
+            escapedURLString = searchURLString(baseSearchURL, term: card.term),
+            url = NSURL(string: escapedURLString) {
+                webView.loadRequest(NSURLRequest(URL: url))
         }
     }
     
+    private func searchURLString(base: String, term: String) -> String? {
+        return "\(baseSearchURL) \(term)"
+            .stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+    }
+
 }
