@@ -24,7 +24,7 @@ class SearchController: UIViewController {
     
     private func searchURLString(base: String, term: String) -> String? {
         return "\(baseSearchURL) \(term)"
-            .stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+            .stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet())
     }
 
 }
