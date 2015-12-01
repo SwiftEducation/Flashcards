@@ -24,7 +24,7 @@ class Deck {
             "controller outlet" : "A controller view property, marked with IBOutlet",
             "controller action" : "A controller method, marked with IBAction, that is triggered by an interface event."
         ]
-        cards = map(cardData) { Flashcard(term: $0, definition: $1) }
+        cards = cardData.map { Flashcard(term: $0, definition: $1) }
     }
     
 }
