@@ -11,7 +11,7 @@ class SearchController: UIViewController {
     
     @IBOutlet weak var webView: UIWebView!
     var flashcard: Flashcard?
-    let baseSearchURL = "http://google.com/search?q=apple developer"
+    let baseSearchURL = "https://google.com/search?q=apple developer"
     
     override func viewDidLoad() {
         super.viewDidLoad()
