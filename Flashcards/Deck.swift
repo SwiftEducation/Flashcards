@@ -9,7 +9,7 @@ import Foundation
 
 class Deck {
     
-    private let cards: [Flashcard]
+    fileprivate let cards: [Flashcard]
 
     var randomCard: Flashcard? {
         if cards.isEmpty {
