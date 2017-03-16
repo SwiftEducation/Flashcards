@@ -16,15 +16,15 @@ class SearchController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if let card = flashcard,
-            escapedURLString = searchURLString(baseSearchURL, term: card.term),
-            url = NSURL(string: escapedURLString) {
-                webView.loadRequest(NSURLRequest(URL: url))
+            let escapedURLString = searchURLString(baseSearchURL, term: card.term),
+            let url = URL(string: escapedURLString) {
+                webView.loadRequest(URLRequest(url: url))
         }
     }
     
-    private func searchURLString(base: String, term: String) -> String? {
+    private func searchURLString(_ base: String, term: String) -> String? {
         return "\(baseSearchURL) \(term)"
-            .stringByAddingPercentEncodingWithAllowedCharacters(.URLQueryAllowedCharacterSet())
+            .addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
     }
 
 }
