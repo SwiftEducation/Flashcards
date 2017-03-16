@@ -21,8 +21,8 @@ class TermController: UIViewController {
         }
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let definitionController = segue.destinationViewController as? DefinitionController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let definitionController = segue.destination as? DefinitionController {
             definitionController.flashcard = flashcard
         }
     }
