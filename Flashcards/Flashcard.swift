@@ -20,5 +20,5 @@ class Flashcard {
     convenience init() {
         self.init(term: "Default term", definition: "Default definition.")
     }
-    
+        
 }
