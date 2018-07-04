@@ -1,5 +1,9 @@
 <img align="right" src="https://github.com/SwiftEducation/Flashcards/raw/master/Flashcards/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
 
+## Deprecation Warning
+
+The Swift Education materials are out of date, and are no longer maintained.
+
 # Flashcards
 
 ### Level 4, Eight Lessons
